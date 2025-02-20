@@ -1,13 +1,3 @@
-resource "kubernetes_manifest" "namespace_prometheus_operator" {
-  manifest = {
-    "apiVersion" = "v1"
-    "kind" = "Namespace"
-    "metadata" = {
-      "name" = "prometheus-operator"
-    }
-  }
-}
-
 resource "kubernetes_manifest" "customresourcedefinition_alertmanagerconfigs_monitoring_coreos_com" {
   manifest = {
     "apiVersion" = "apiextensions.k8s.io/v1"
@@ -84160,7 +84150,7 @@ resource "kubernetes_manifest" "serviceaccount_prometheus_operator_prometheus_op
         "app.kubernetes.io/version" = "0.80.1"
       }
       "name" = "prometheus-operator"
-      "namespace" = "prometheus-operator"
+      "namespace" = kubernetes_namespace.this.metadata.0.name
     }
   }
 }
@@ -84356,7 +84346,7 @@ resource "kubernetes_manifest" "clusterrolebinding_prometheus_operator" {
       {
         "kind" = "ServiceAccount"
         "name" = "prometheus-operator"
-        "namespace" = "prometheus-operator"
+        "namespace" = kubernetes_namespace.this.metadata.0.name
       },
     ]
   }
@@ -84373,7 +84363,7 @@ resource "kubernetes_manifest" "service_prometheus_operator_prometheus_operator"
         "app.kubernetes.io/version" = "0.80.1"
       }
       "name" = "prometheus-operator"
-      "namespace" = "prometheus-operator"
+      "namespace" = kubernetes_namespace.this.metadata.0.name
     }
     "spec" = {
       "clusterIP" = "None"
@@ -84403,7 +84393,7 @@ resource "kubernetes_manifest" "deployment_prometheus_operator_prometheus_operat
         "app.kubernetes.io/version" = "0.80.1"
       }
       "name" = "prometheus-operator"
-      "namespace" = "prometheus-operator"
+      "namespace" = kubernetes_namespace.this.metadata.0.name
     }
     "spec" = {
       "replicas" = 1
