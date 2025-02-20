@@ -5,7 +5,7 @@ resource "kubernetes_manifest" "customresourcedefinition_alertmanagerconfigs_mon
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "alertmanagerconfigs.monitoring.coreos.com"
     }
@@ -12182,7 +12182,7 @@ resource "kubernetes_manifest" "customresourcedefinition_alertmanagers_monitorin
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "alertmanagers.monitoring.coreos.com"
     }
@@ -23349,7 +23349,7 @@ resource "kubernetes_manifest" "customresourcedefinition_podmonitors_monitoring_
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "podmonitors.monitoring.coreos.com"
     }
@@ -24863,7 +24863,7 @@ resource "kubernetes_manifest" "customresourcedefinition_probes_monitoring_coreo
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "probes.monitoring.coreos.com"
     }
@@ -26338,7 +26338,7 @@ resource "kubernetes_manifest" "customresourcedefinition_prometheusagents_monito
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "prometheusagents.monitoring.coreos.com"
     }
@@ -40047,7 +40047,7 @@ resource "kubernetes_manifest" "customresourcedefinition_prometheuses_monitoring
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "prometheuses.monitoring.coreos.com"
     }
@@ -56513,7 +56513,7 @@ resource "kubernetes_manifest" "customresourcedefinition_prometheusrules_monitor
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "prometheusrules.monitoring.coreos.com"
     }
@@ -56730,7 +56730,7 @@ resource "kubernetes_manifest" "customresourcedefinition_scrapeconfigs_monitorin
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "scrapeconfigs.monitoring.coreos.com"
     }
@@ -72157,7 +72157,7 @@ resource "kubernetes_manifest" "customresourcedefinition_servicemonitors_monitor
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "servicemonitors.monitoring.coreos.com"
     }
@@ -73700,7 +73700,7 @@ resource "kubernetes_manifest" "customresourcedefinition_thanosrulers_monitoring
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "thanosrulers.monitoring.coreos.com"
     }

@@ -15,7 +15,7 @@ resource "kubernetes_manifest" "customresourcedefinition_alertmanagerconfigs_mon
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "alertmanagerconfigs.monitoring.coreos.com"
     }
@@ -12192,7 +12192,7 @@ resource "kubernetes_manifest" "customresourcedefinition_alertmanagers_monitorin
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "alertmanagers.monitoring.coreos.com"
     }
@@ -23359,7 +23359,7 @@ resource "kubernetes_manifest" "customresourcedefinition_podmonitors_monitoring_
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "podmonitors.monitoring.coreos.com"
     }
@@ -24873,7 +24873,7 @@ resource "kubernetes_manifest" "customresourcedefinition_probes_monitoring_coreo
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "probes.monitoring.coreos.com"
     }
@@ -26348,7 +26348,7 @@ resource "kubernetes_manifest" "customresourcedefinition_prometheusagents_monito
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "prometheusagents.monitoring.coreos.com"
     }
@@ -40057,7 +40057,7 @@ resource "kubernetes_manifest" "customresourcedefinition_prometheuses_monitoring
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "prometheuses.monitoring.coreos.com"
     }
@@ -56523,7 +56523,7 @@ resource "kubernetes_manifest" "customresourcedefinition_prometheusrules_monitor
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "prometheusrules.monitoring.coreos.com"
     }
@@ -56740,7 +56740,7 @@ resource "kubernetes_manifest" "customresourcedefinition_scrapeconfigs_monitorin
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "scrapeconfigs.monitoring.coreos.com"
     }
@@ -72167,7 +72167,7 @@ resource "kubernetes_manifest" "customresourcedefinition_servicemonitors_monitor
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "servicemonitors.monitoring.coreos.com"
     }
@@ -73710,7 +73710,7 @@ resource "kubernetes_manifest" "customresourcedefinition_thanosrulers_monitoring
     "metadata" = {
       "annotations" = {
         "controller-gen.kubebuilder.io/version" = "v0.17.1"
-        "operator.prometheus.io/version" = "0.80.0"
+        "operator.prometheus.io/version" = "0.80.1"
       }
       "name" = "thanosrulers.monitoring.coreos.com"
     }
@@ -84157,7 +84157,7 @@ resource "kubernetes_manifest" "serviceaccount_prometheus_operator_prometheus_op
       "labels" = {
         "app.kubernetes.io/component" = "controller"
         "app.kubernetes.io/name" = "prometheus-operator"
-        "app.kubernetes.io/version" = "0.80.0"
+        "app.kubernetes.io/version" = "0.80.1"
       }
       "name" = "prometheus-operator"
       "namespace" = "prometheus-operator"
@@ -84173,7 +84173,7 @@ resource "kubernetes_manifest" "clusterrole_prometheus_operator" {
       "labels" = {
         "app.kubernetes.io/component" = "controller"
         "app.kubernetes.io/name" = "prometheus-operator"
-        "app.kubernetes.io/version" = "0.80.0"
+        "app.kubernetes.io/version" = "0.80.1"
       }
       "name" = "prometheus-operator"
     }
@@ -84343,7 +84343,7 @@ resource "kubernetes_manifest" "clusterrolebinding_prometheus_operator" {
       "labels" = {
         "app.kubernetes.io/component" = "controller"
         "app.kubernetes.io/name" = "prometheus-operator"
-        "app.kubernetes.io/version" = "0.80.0"
+        "app.kubernetes.io/version" = "0.80.1"
       }
       "name" = "prometheus-operator"
     }
@@ -84370,7 +84370,7 @@ resource "kubernetes_manifest" "service_prometheus_operator_prometheus_operator"
       "labels" = {
         "app.kubernetes.io/component" = "controller"
         "app.kubernetes.io/name" = "prometheus-operator"
-        "app.kubernetes.io/version" = "0.80.0"
+        "app.kubernetes.io/version" = "0.80.1"
       }
       "name" = "prometheus-operator"
       "namespace" = "prometheus-operator"
@@ -84400,7 +84400,7 @@ resource "kubernetes_manifest" "deployment_prometheus_operator_prometheus_operat
       "labels" = {
         "app.kubernetes.io/component" = "controller"
         "app.kubernetes.io/name" = "prometheus-operator"
-        "app.kubernetes.io/version" = "0.80.0"
+        "app.kubernetes.io/version" = "0.80.1"
       }
       "name" = "prometheus-operator"
       "namespace" = "prometheus-operator"
@@ -84421,7 +84421,7 @@ resource "kubernetes_manifest" "deployment_prometheus_operator_prometheus_operat
           "labels" = {
             "app.kubernetes.io/component" = "controller"
             "app.kubernetes.io/name" = "prometheus-operator"
-            "app.kubernetes.io/version" = "0.80.0"
+            "app.kubernetes.io/version" = "0.80.1"
           }
         }
         "spec" = {
@@ -84430,7 +84430,7 @@ resource "kubernetes_manifest" "deployment_prometheus_operator_prometheus_operat
             {
               "args" = [
                 "--kubelet-service=kube-system/kubelet",
-                "--prometheus-config-reloader=quay.io/prometheus-operator/prometheus-config-reloader:v0.80.0",
+                "--prometheus-config-reloader=quay.io/prometheus-operator/prometheus-config-reloader:v0.80.1",
                 "--kubelet-endpoints=true",
                 "--kubelet-endpointslice=false",
               ]
@@ -84440,7 +84440,7 @@ resource "kubernetes_manifest" "deployment_prometheus_operator_prometheus_operat
                   "value" = "30"
                 },
               ]
-              "image" = "quay.io/prometheus-operator/prometheus-operator:v0.80.0"
+              "image" = "quay.io/prometheus-operator/prometheus-operator:v0.80.1"
               "name" = "prometheus-operator"
               "ports" = [
                 {
